@@ -1,0 +1,17 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/jteeuwen/go-pkg-rss",
+			"repository": "https://github.com/jteeuwen/go-pkg-rss",
+			"revision": "5576b8d83ed75cbb4bc43ef18c07414f880b3472",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/codegangsta/negroni",
+			"repository": "https://github.com/codegangsta/negroni",
+			"revision": "c7477ad8e330bef55bf1ebe300cf8aa67c492d1b",
+			"branch": "master"
+		}
+	]
+}
