@@ -18,7 +18,7 @@ func Run(feedURLs []string) {
 }
 
 func PollFeed(uri string, timeout int, cr xmlx.CharsetFunc) {
-	feed := rss.NewWithHandlers(timeout, true, chanHandler, itemHandler)
+	feed := rss.New(timeout, true, chanHandler, itemHandler)
 
 	for {
 		if err := feed.Fetch(uri, cr); err != nil {
