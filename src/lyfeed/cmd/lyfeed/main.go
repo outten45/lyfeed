@@ -20,7 +20,8 @@ func main() {
 
 	mux := httprouter.New()
 	mux.GET("/page/:id", myHandler)
-	n := negroni.Classic()
+	// n := negroni.Classic()
+	n := negroni.New()
 	n.UseHandler(mux)
 	n.Run(":3000")
 
