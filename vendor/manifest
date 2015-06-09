@@ -18,6 +18,12 @@
 			"repository": "https://github.com/julienschmidt/httprouter",
 			"revision": "8c199fb6259ffc1af525cc3ad52ee60ba8359669",
 			"branch": "master"
+		},
+		{
+			"importpath": "github.com/jteeuwen/go-pkg-xmlx",
+			"repository": "https://github.com/jteeuwen/go-pkg-xmlx",
+			"revision": "cf505b97c711dd1c5a4682f68ea04dd35e385b8f",
+			"branch": "master"
 		}
 	]
 }

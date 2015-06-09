@@ -15,13 +15,13 @@ func myHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 
 func main() {
 	fmt.Println("Made it!")
-	importer.Run()
+	importer.Run([]string{"http://blog.outten.net/index.xml"})
 	fmt.Println("----------")
 
 	mux := httprouter.New()
 	mux.GET("/page/:id", myHandler)
-	// n := negroni.Classic()
-	n := negroni.New()
+	n := negroni.Classic()
+	// n := negroni.New()
 	n.UseHandler(mux)
 	n.Run(":3000")
 
