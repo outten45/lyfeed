@@ -24,6 +24,12 @@
 			"repository": "https://github.com/jteeuwen/go-pkg-xmlx",
 			"revision": "cf505b97c711dd1c5a4682f68ea04dd35e385b8f",
 			"branch": "master"
+		},
+		{
+			"importpath": "github.com/mattn/go-sqlite3",
+			"repository": "https://github.com/mattn/go-sqlite3",
+			"revision": "542ae647f8601bafd96233961b150cae198e0295",
+			"branch": "master"
 		}
 	]
 }

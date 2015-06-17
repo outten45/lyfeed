@@ -1,13 +1,16 @@
 package main
 
 import (
+	"database/sql"
 	"fmt"
+	"log"
 	"lyfeed/importer"
 	"net/http"
 	"os"
 
 	"github.com/codegangsta/negroni"
 	"github.com/julienschmidt/httprouter"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func myHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
@@ -15,6 +18,12 @@ func myHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 }
 
 func main() {
+	db, err := sql.Open("sqlite3", "./test.db")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+
 	fmt.Println("Made it!")
 	importer.Run([]string{"http://blog.outten.net/index.xml"})
 	fmt.Println("----------")
