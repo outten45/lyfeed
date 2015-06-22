@@ -30,6 +30,12 @@
 			"repository": "https://github.com/mattn/go-sqlite3",
 			"revision": "542ae647f8601bafd96233961b150cae198e0295",
 			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gchaincl/dotsql",
+			"repository": "https://github.com/gchaincl/dotsql",
+			"revision": "f21b16f244b93aebdc1e259b998361eee9c69267",
+			"branch": "master"
 		}
 	]
 }

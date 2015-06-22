@@ -2,6 +2,7 @@ package importer
 
 import (
 	"fmt"
+	"lyfeed"
 
 	"os"
 	"time"
@@ -10,11 +11,10 @@ import (
 	"github.com/jteeuwen/go-pkg-xmlx"
 )
 
-func Run(feedURLs []string) {
+func Run(c *lyfeed.Context, feedURLs []string) {
 	for _, f := range feedURLs {
 		go PollFeed(f, 5, nil)
 	}
-
 }
 
 func PollFeed(uri string, timeout int, cr xmlx.CharsetFunc) {
