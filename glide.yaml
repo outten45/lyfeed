@@ -1,0 +1,22 @@
+package: github.com/outten45/lyfeed
+import:
+- package: github.com/jteeuwen/go-pkg-rss
+  version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
+  repo: https://github.com/jteeuwen/go-pkg-rss
+- package: github.com/codegangsta/negroni
+  version: c7477ad8e330bef55bf1ebe300cf8aa67c492d1b
+  repo: https://github.com/codegangsta/negroni
+- package: github.com/julienschmidt/httprouter
+  version: ^1.1.0
+  repo: https://github.com/julienschmidt/httprouter
+- package: github.com/jteeuwen/go-pkg-xmlx
+  version: cf505b97c711dd1c5a4682f68ea04dd35e385b8f
+  repo: https://github.com/jteeuwen/go-pkg-xmlx
+- package: github.com/mattn/go-sqlite3
+  version: 542ae647f8601bafd96233961b150cae198e0295
+  repo: https://github.com/mattn/go-sqlite3
+- package: github.com/gchaincl/dotsql
+  version: f21b16f244b93aebdc1e259b998361eee9c69267
+  repo: https://github.com/gchaincl/dotsql
+- package: lyfeed
+- package: lyfeed/importer
