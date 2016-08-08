@@ -1,12 +1,11 @@
-hash: 10549439922f4cb7ff7d2823690c5b30a3d6cf90390f9762c9948e89847b7282
-updated: 2016-08-07T21:26:36.761211701-04:00
+hash: 3b2cf21c5c339b5ce51c8b46679b428a2c0544e3737b2251a04db830c56a170c
+updated: 2016-08-07T21:49:18.419841091-04:00
 imports:
 - name: github.com/codegangsta/negroni
   version: c7477ad8e330bef55bf1ebe300cf8aa67c492d1b
   repo: https://github.com/codegangsta/negroni
-- name: github.com/gchaincl/dotsql
-  version: f21b16f244b93aebdc1e259b998361eee9c69267
-  repo: https://github.com/gchaincl/dotsql
+- name: github.com/jinzhu/gorm
+  version: a646b13548ec0aa812fe805b2780f460dd2771b6
 - name: github.com/jteeuwen/go-pkg-rss
   version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
   repo: https://github.com/jteeuwen/go-pkg-rss

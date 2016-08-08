@@ -15,6 +15,4 @@ import:
 - package: github.com/mattn/go-sqlite3
   version: 542ae647f8601bafd96233961b150cae198e0295
   repo: https://github.com/mattn/go-sqlite3
-- package: github.com/gchaincl/dotsql
-  version: f21b16f244b93aebdc1e259b998361eee9c69267
-  repo: https://github.com/gchaincl/dotsql
+- package: github.com/jinzhu/gorm

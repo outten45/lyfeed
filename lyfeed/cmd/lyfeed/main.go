@@ -8,14 +8,12 @@ import (
 	"os"
 
 	"github.com/codegangsta/negroni"
-	"github.com/gchaincl/dotsql"
 	"github.com/julienschmidt/httprouter"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/outten45/lyfeed/lyfeed"
 	"github.com/outten45/lyfeed/lyfeed/importer"
 )
 
-var dot *dotsql.DotSql
 var db *sql.DB
 
 func myHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
@@ -30,13 +28,7 @@ func main() {
 	}
 	defer db.Close()
 
-	dot, err = dotsql.LoadFromFile("queries.sql")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Printf("dot>> %+v\n", dot)
-
-	context := &lyfeed.Context{DB: db, DotSql: dot}
+	context := &lyfeed.Context{DB: db}
 
 	importer.Run(context, []string{"http://blog.outten.net/index.xml"})
 
