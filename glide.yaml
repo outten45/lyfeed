@@ -18,5 +18,3 @@ import:
 - package: github.com/gchaincl/dotsql
   version: f21b16f244b93aebdc1e259b998361eee9c69267
   repo: https://github.com/gchaincl/dotsql
-- package: lyfeed
-- package: lyfeed/importer

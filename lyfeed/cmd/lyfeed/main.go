@@ -4,8 +4,6 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"lyfeed"
-	"lyfeed/importer"
 	"net/http"
 	"os"
 
@@ -13,6 +11,8 @@ import (
 	"github.com/gchaincl/dotsql"
 	"github.com/julienschmidt/httprouter"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/outten45/lyfeed/lyfeed"
+	"github.com/outten45/lyfeed/lyfeed/importer"
 )
 
 var dot *dotsql.DotSql

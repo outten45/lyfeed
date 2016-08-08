@@ -2,13 +2,12 @@ package importer
 
 import (
 	"fmt"
-	"lyfeed"
-
 	"os"
 	"time"
 
 	rss "github.com/jteeuwen/go-pkg-rss"
 	"github.com/jteeuwen/go-pkg-xmlx"
+	"github.com/outten45/lyfeed/lyfeed"
 )
 
 func Run(c *lyfeed.Context, feedURLs []string) {
