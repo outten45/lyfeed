@@ -10,8 +10,8 @@ import (
 	"github.com/codegangsta/negroni"
 	"github.com/julienschmidt/httprouter"
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/outten45/lyfeed/lyfeed"
-	"github.com/outten45/lyfeed/lyfeed/importer"
+	"github.com/outten45/lyfeed"
+	"github.com/outten45/lyfeed/importer"
 )
 
 var db *sql.DB

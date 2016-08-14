@@ -7,7 +7,7 @@ import (
 
 	rss "github.com/jteeuwen/go-pkg-rss"
 	"github.com/jteeuwen/go-pkg-xmlx"
-	"github.com/outten45/lyfeed/lyfeed"
+	"github.com/outten45/lyfeed"
 )
 
 func Run(c *lyfeed.Context, feedURLs []string) {
