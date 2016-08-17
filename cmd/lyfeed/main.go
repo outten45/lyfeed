@@ -10,8 +10,6 @@ import (
 	"github.com/codegangsta/negroni"
 	"github.com/julienschmidt/httprouter"
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/outten45/lyfeed"
-	"github.com/outten45/lyfeed/importer"
 )
 
 var db *sql.DB
@@ -21,6 +19,7 @@ func myHandler(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 }
 
 func main() {
+	fmt.Println("let's get started!")
 	var err error
 	db, err = sql.Open("sqlite3", "./test.db")
 	if err != nil {
@@ -28,9 +27,7 @@ func main() {
 	}
 	defer db.Close()
 
-	context := &lyfeed.Context{DB: db}
-
-	importer.Run(context, []string{"http://blog.outten.net/index.xml"})
+	// context := &lyfeed.Context{DB: db}
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -41,6 +38,7 @@ func main() {
 	n := negroni.Classic()
 	// n := negroni.New()
 	n.UseHandler(mux)
+	fmt.Printf("port: %s\n", port)
 	n.Run(fmt.Sprintf(":%s", port))
 
 }

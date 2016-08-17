@@ -42,6 +42,14 @@ func (mh *RssHandler) ProcessChannels(feed *rss.Feed, newchannels []*rss.Channel
 func (mn *RssHandler) ProcessItems(feed *rss.Feed, ch *rss.Channel, newitems []*rss.Item) {
 	fmt.Printf("%d new item(s) in %s\n", len(newitems), feed.Url)
 	fmt.Printf("---------------------------------------------------------\n")
-	fmt.Printf("%+v\n", newitems[0])
+	// fmt.Printf("%+v\n", newitems[0])
+	fmt.Printf("%+v\n", newitems[0].Extensions)
 	fmt.Printf("---------------------------------------------------------\n")
+	if val, ok := newitems[0].Extensions["http://search.yahoo.com/mrss/"]; ok {
+		for k := range val {
+			fmt.Printf("%+v\n", k)
+		}
+		fmt.Printf("----------\n%+v\n", val["group"])
+
+	}
 }
