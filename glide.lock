@@ -1,11 +1,11 @@
 hash: 3b2cf21c5c339b5ce51c8b46679b428a2c0544e3737b2251a04db830c56a170c
-updated: 2016-08-07T21:49:18.419841091-04:00
+updated: 2016-08-17T06:35:54.383855365-04:00
 imports:
 - name: github.com/codegangsta/negroni
   version: c7477ad8e330bef55bf1ebe300cf8aa67c492d1b
   repo: https://github.com/codegangsta/negroni
 - name: github.com/jinzhu/gorm
-  version: a646b13548ec0aa812fe805b2780f460dd2771b6
+  version: 60e0ce561bce4694476216ce93e354aa4eddfeb1
 - name: github.com/jteeuwen/go-pkg-rss
   version: 5576b8d83ed75cbb4bc43ef18c07414f880b3472
   repo: https://github.com/jteeuwen/go-pkg-rss
@@ -18,4 +18,4 @@ imports:
 - name: github.com/mattn/go-sqlite3
   version: 542ae647f8601bafd96233961b150cae198e0295
   repo: https://github.com/mattn/go-sqlite3
-devImports: []
+testImports: []

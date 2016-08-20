@@ -19,3 +19,9 @@ func (is *ItemService) Item(id int) (*lyfeed.Item, error) {
 
 	return &i, nil
 }
+
+// SaveItem
+func (is *ItemService) SaveItem(item lyfeed.Item) error {
+
+	return nil
+}

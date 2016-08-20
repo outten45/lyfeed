@@ -18,3 +18,15 @@ Use go commands to build:
 * Caveat: HTML, CSS ad JavaScript can be external files.
 * Allow users to comment on items in the feeds.
 
+# Approach
+
+event 
+- UUID
+- Date/Time
+- Type
+- Version
+- Raw
+
+  rss -> item -> events
+              -> item (rolled up Type)
+              

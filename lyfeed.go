@@ -2,6 +2,7 @@ package lyfeed
 
 import (
 	"database/sql"
+	"time"
 )
 
 // Context provides some basic application level
@@ -11,12 +12,22 @@ type Context struct {
 }
 
 type Item struct {
-	ID       int
-	GUID     string
-	FeedName string
+	ID              int
+	GUID            string
+	Feed            string
+	Channel         string
+	PubDate         time.Time
+	Raw             string
+	expectedVersion int
+	changes         []interface{}
 }
 
 type ItemService interface {
 	Item(id int) (*Item, error)
-	CreateItem(u *Item) error
+	SaveItem(u *Item) error
+}
+
+type User struct {
+	ID   int
+	Name string
 }
